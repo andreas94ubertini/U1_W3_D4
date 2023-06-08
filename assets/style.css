@@ -1,0 +1,64 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+header {
+  text-align: center;
+}
+h1 {
+  color: red;
+}
+h2 {
+  color: orangered;
+}
+.card {
+  background-color: #0c0b1d;
+  color: #ebebeb;
+  border-radius: 8px;
+  border: 8px solid #0c0b1d;
+  height: 10rem;
+  width: 19rem;
+  display: inline-block;
+  margin: 1% 2%;
+  padding: 1%;
+}
+.number {
+  display: inline-block;
+  width: 5%;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  cursor: pointer;
+  padding: 1%;
+  margin: 1% 1%;
+}
+#main-card-container {
+  text-align: center;
+}
+#main-card {
+  background-color: #0c0b1d;
+  color: #ebebeb;
+  border-radius: 8px;
+  border: 8px solid #0c0b1d;
+  height: 50%;
+  width: 40%;
+  margin: 1% auto;
+  text-align: center;
+}
+#sort-number {
+  color: red;
+  width: 10rem;
+  height: 5rem;
+  background-color: #0c0b1d;
+  border-radius: 8px;
+}
+.uscito {
+  color: red;
+  border: 2px solid red;
+}
+.hidden {
+  display: none;
+}
+.ultimo-uscito {
+  border: 2px solid yellow;
+}

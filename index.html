@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/assets/style.css" />
+    <title>Tombola</title>
+  </head>
+  <body>
+    <header>
+      <h1>Il gioco della tombola</h1>
+      <div id="card-choice-container">
+        <h2>Seleziona cartelle per cominciare</h2>
+        <form id="form-card-choice">
+          <label for="choiced-number">Con quante cartelle vuoi giocare?</label>
+          <input id="choiced-number" type="number" min="0" max="10" required />
+          <button id="start-to-play" type="submit">Inizia a giocare</button>
+        </form>
+      </div>
+    </header>
+    <main>
+      <section>
+        <div id="your-cards-container"></div>
+      </section>
+      <section>
+        <div id="main-card-container">
+          <div id="main-card" class="main"></div>
+          <button id="sort-number">Estrai un numero</button>
+        </div>
+      </section>
+    </main>
+    <script src="/script/script.js"></script>
+  </body>
+</html>
