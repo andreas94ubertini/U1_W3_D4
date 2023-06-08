@@ -17,20 +17,22 @@ h2 {
   color: #ebebeb;
   border-radius: 8px;
   border: 8px solid #0c0b1d;
-  height: 10rem;
-  width: 19rem;
+  text-align: center;
   display: inline-block;
-  margin: 1% 2%;
-  padding: 1%;
+  margin: 2% 2%;
+  padding: 0.5%;
 }
 .number {
   display: inline-block;
-  width: 5%;
+  width: 7%;
   border: 1px solid transparent;
   border-radius: 8px;
   cursor: pointer;
   padding: 1%;
   margin: 1% 1%;
+}
+.card:last-child {
+  display: none;
 }
 #main-card-container {
   text-align: center;

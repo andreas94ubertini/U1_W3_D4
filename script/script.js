@@ -13,9 +13,7 @@ const mainCardGenerator = function (numberOfCell, parentElement, randomN) {
       newDivNumber.innerText = `${i + 1}`
       newDivNumber.classList.add(`${i + 1}`)
     } else {
-      newDivNumber.innerText = Math.floor(Math.random() * 77)
-      //   let classAssing = newDivNumber[i].innerText
-      //   newDivNumber.classList.add(`${classAssing}`)
+      newDivNumber.innerText = Math.floor(Math.random() * 76 + 1)
     }
     parentElement.appendChild(newDivNumber)
   }
@@ -25,7 +23,6 @@ const mainCardGenerator = function (numberOfCell, parentElement, randomN) {
     div.classList.add(div.innerText)
   })
 }
-// mainCardGenerator(76, mainCard)
 
 const playersCardGenerator = function (numberOfCard, n = 24) {
   for (let i = 0; i < numberOfCard; i++) {
@@ -39,6 +36,8 @@ const playersCardGenerator = function (numberOfCard, n = 24) {
 selectNumberForm.addEventListener("submit", (e) => {
   e.preventDefault()
   let numberOfCards = document.getElementById("choiced-number").value
+  numberOfCards = parseInt(numberOfCards) + 1
+  console.log(numberOfCards, "sono n")
   mainCardGenerator(76, mainCard)
   playersCardGenerator(numberOfCards, 24)
   selectNumberForm.classList.add("hidden")
@@ -55,5 +54,11 @@ randomNumberGenerator = function () {
       div.classList.add("uscito")
     }
   })
+  // allTheNumbers.forEach((div) => {
+  //   // let className = div.className
+  //   if (div.className === `.number .${sortedNumber}`) {
+  //     div.classList.add("ultimo-uscito")
+  //   }
+  // })
 }
 sortANumber.addEventListener("click", randomNumberGenerator)
