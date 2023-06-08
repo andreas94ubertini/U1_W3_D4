@@ -44,21 +44,15 @@ selectNumberForm.addEventListener("submit", (e) => {
 })
 
 randomNumberGenerator = function () {
-  const sortedNumber = Math.floor(Math.random() * 76 + 1)
-  console.log(sortedNumber)
-  numeriUsciti.push(sortedNumber)
+  const randomNumber = Math.floor(Math.random() * 76 + 1)
+  console.log(randomNumber)
+  numeriUsciti.push(randomNumber)
   console.log(numeriUsciti)
   const allTheNumbers = document.querySelectorAll(".number")
   allTheNumbers.forEach((div) => {
-    if (div.classList.contains(`${sortedNumber}`)) {
+    if (div.classList.contains(`${randomNumber}`)) {
       div.classList.add("uscito")
     }
   })
-  // allTheNumbers.forEach((div) => {
-  //   // let className = div.className
-  //   if (div.className === `.number .${sortedNumber}`) {
-  //     div.classList.add("ultimo-uscito")
-  //   }
-  // })
 }
 sortANumber.addEventListener("click", randomNumberGenerator)
